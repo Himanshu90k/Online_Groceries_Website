@@ -11,6 +11,7 @@ export default {
       },
       colors: {
         customBlack: '#1E1E1E',
+        lightBlack: 'rgba(0, 0, 0, 0.80)',
         lightRed: '#F4C6C6',
         customYellow: '#FED716',
         customRed: '#D31F28',
@@ -18,6 +19,8 @@ export default {
       },
       fontSize: {
         'xxs': '10px',
+        '3.5xl': '2rem',
+        '4.5xl': '2.5rem',
       },
       width: {
         2.5: '0.625rem',
@@ -28,9 +31,11 @@ export default {
         300: '85rem',
       },
       height: {
+        15: '3.75rem',
         78: '18.75rem',
         96: '22.625rem',
         100: '25rem',
+        190: '50.875rem',
       },
       borderWidth: {
         3: '3px',
@@ -39,9 +44,11 @@ export default {
       borderRadius: {
         '4-xl': '2rem',
         '5-xl': '2.875rem',
+        '8-xl': '5.625rem',
       },
       boxShadow: {
-        cardShadow: '4px 3px 8.1px 0px rgba(0, 0, 0, 0.26)',
+        locationBarShadow: '0px 6px 6px 0px rgba(0, 0, 0, 0.30)',
+        locationBoxShadow: '-2px 2px 6px 0px rgba(0, 0, 0, 0.25)',
       },
       dropShadow: {
         textShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
