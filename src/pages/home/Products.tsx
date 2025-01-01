@@ -46,11 +46,11 @@ const Products = () => {
                     <h2 className='text-white font-inter text-6xl font-black drop-shadow-textShadow'>FLAT 50% OFF ON NEW YEAR</h2>
                     <svg xmlns="http://www.w3.org/2000/svg" width="517" height="16" viewBox="0 0 517 16" fill="none">
                         <g filter="url(#filter0_d_4_64)">
-                            <path d="M8.5 4H508.5" stroke="#FEFEFE" stroke-width="8" stroke-linecap="round" />
+                            <path d="M8.5 4H508.5" stroke="#FEFEFE" strokeWidth="8" strokeLinecap="round" />
                         </g>
                         <defs>
-                            <filter id="filter0_d_4_64" x="0.5" y="0" width="516" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <filter id="filter0_d_4_64" x="0.5" y="0" width="516" height="16" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                                 <feOffset dy="4" />
                                 <feGaussianBlur stdDeviation="2" />
