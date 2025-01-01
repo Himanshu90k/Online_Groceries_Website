@@ -12,6 +12,7 @@ export default {
       colors: {
         customBlack: '#1E1E1E',
         lightBlack: 'rgba(0, 0, 0, 0.80)',
+        extraLightBlack: 'rgba(0, 0, 0, 0.60)',
         lightRed: '#F4C6C6',
         customYellow: '#FED716',
         customRed: '#D31F28',
@@ -28,10 +29,12 @@ export default {
         140: '45rem',
         250: '68.625rem',
         270: '74.375rem',
+        280: '77.5rem',
         300: '85rem',
       },
       height: {
         15: '3.75rem',
+        19: '4.375rem',
         78: '18.75rem',
         96: '22.625rem',
         100: '25rem',
@@ -49,6 +52,7 @@ export default {
       boxShadow: {
         locationBarShadow: '0px 6px 6px 0px rgba(0, 0, 0, 0.30)',
         locationBoxShadow: '-2px 2px 6px 0px rgba(0, 0, 0, 0.25)',
+        searchBoxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
       },
       dropShadow: {
         textShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
