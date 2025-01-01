@@ -25,6 +25,7 @@ export default {
       },
       width: {
         2.5: '0.625rem',
+        15: '3.75rem',
         120: '37.5rem',
         140: '45rem',
         190: '51.25rem',
@@ -35,6 +36,7 @@ export default {
         300: '85rem',
       },
       height: {
+        7: '1.875rem',
         15: '3.75rem',
         19: '4.375rem',
         78: '18.75rem',

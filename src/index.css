@@ -5,3 +5,12 @@
 :root {
     background-color: #F4C6C6;
 };
+
+input:focus {
+    outline: none;
+}
+
+input {
+    outline: none;
+    background-color: none;
+}
