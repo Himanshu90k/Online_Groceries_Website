@@ -5,11 +5,11 @@ import AddLocationPopup from "./AddLocationPopup";
 
 const HomePage = () => {
     return (
-        <div className="relative w-300 h-auto mx-auto bg-white flex flex-col items-center justify-start">
+        <div className="relative w-78 min-[350px]:w-300 h-auto mx-auto bg-white flex flex-col items-center justify-start">
             <Navbar />
-            <Products />
+            {/* <Products /> */}
             {/* <LocationPopup /> */}
-            <AddLocationPopup />
+            {/* <AddLocationPopup /> */}
         </div>
     );
 };
