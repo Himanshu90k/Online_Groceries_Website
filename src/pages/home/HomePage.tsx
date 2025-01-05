@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
-import Products from "./Products";
-import LocationPopup from "./LocationPopup";
-import AddLocationPopup from "./AddLocationPopup";
+// import Products from "./Products";
+// import LocationPopup from "./LocationPopup";
+// import AddLocationPopup from "./AddLocationPopup";
 
 const HomePage = () => {
     return (
