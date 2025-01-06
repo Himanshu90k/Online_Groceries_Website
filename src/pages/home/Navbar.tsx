@@ -1,32 +1,14 @@
-import { useState, useEffect } from "react";
-
 const Navbar = () => {
 
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
-    useEffect(() => {
-
-        const handleResize = () => {
-            setScreenWidth(() => window.innerWidth);
-            console.log(window.innerWidth)
-        };
-
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize)
-        }
-
-    }, [])
-
     return (
-        <div className="flex items-center gap-9 md:gap-24 min-w-71 my-4">
+        <div className="flex items-center justify-between w-full px-3 xl:px-32 my-4">
 
             {/* profile details */}
             <div className="flex items-center gap-1 md:gap-4">
                 <div className="flex items-center justify-center w-8 h-8 md:w-16 md:h-16 rounded-4-xl border-2 border-solid border-customYellow bg-customRed">
-                    <svg xmlns="http://www.w3.org/2000/svg" width={(screenWidth > 768)? "32" : '14'} height={(screenWidth > 768)? "38" : "18"} viewBox="0 0 32 38" fill="none">
-                        <path d="M16 15.5C19.866 15.5 23 12.366 23 8.5C23 4.63401 19.866 1.5 16 1.5C12.134 1.5 9 4.63401 9 8.5C9 12.366 12.134 15.5 16 15.5Z" stroke="white" strokeWidth={(screenWidth > 768)? "3" : "2"} />
-                        <path d="M30 28.625C30 32.9737 30 36.5 16 36.5C2 36.5 2 32.9737 2 28.625C2 24.2763 8.2685 20.75 16 20.75C23.7315 20.75 30 24.2763 30 28.625Z" stroke="white" strokeWidth={(screenWidth > 768)? "3" : "2"} />
+                    <svg xmlns="http://www.w3.org/2000/svg" className="md:w-8 w-3.5 md:h-9.5 h-4.5" viewBox="0 0 32 38" fill="none">
+                        <path className="stroke-2 md:stroke-3" d="M16 15.5C19.866 15.5 23 12.366 23 8.5C23 4.63401 19.866 1.5 16 1.5C12.134 1.5 9 4.63401 9 8.5C9 12.366 12.134 15.5 16 15.5Z" stroke="white" />
+                        <path className="stroke-2 md:stroke-3" d="M30 28.625C30 32.9737 30 36.5 16 36.5C2 36.5 2 32.9737 2 28.625C2 24.2763 8.2685 20.75 16 20.75C23.7315 20.75 30 24.2763 30 28.625Z" stroke="white" />
                     </svg>
                 </div>
                 <div className="flex flex-col items-start gap-1 md:gap-6-px">
@@ -36,7 +18,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="flex items-center gap-1 md:gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width={(screenWidth > 768)? "14":"7"} height={(screenWidth > 768)? "20":"10"} viewBox="0 0 14 20" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-7px md:w-3.5 h-2.5 md:h-5" viewBox="0 0 14 20" fill="none">
                             <path
                                 d="M7 9.5C6.33696 9.5 5.70107 9.23661 5.23223 8.76777C4.76339 8.29893 4.5 7.66304 4.5 7C4.5 6.33696 4.76339 5.70107 
                             5.23223 5.23223C5.70107 4.76339 6.33696 4.5 7 4.5C7.66304 4.5 8.29893 4.76339 8.76777 5.23223C9.23661 5.70107 9.5 6.33696 
@@ -48,7 +30,7 @@ const Navbar = () => {
                         {/* address */}
                         <div className="flex items-center gap-1 md:gap-2">
                             <p className="text-black font-inter text-xxs md:text-sm font-medium">Deliver to 400071</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width={(screenWidth > 768)? "10":"6"} height={(screenWidth > 768)? "6":"5"} viewBox="0 0 10 6" fill="none">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="w-6px md:w-2.5 h-5px md:h-6px" viewBox="0 0 10 6" fill="none">
                                 <path d="M9 1L5 5L1 1H9Z" fill="black" stroke="black" strokeWidth="2" strokeLinejoin="round" />
                             </svg>
                         </div>
@@ -59,7 +41,7 @@ const Navbar = () => {
             {/* cart and search */}
             <div className="flex items-center gap-2 md:gap-4">
                 {/* search */}
-                <div className={`h-10 ${(screenWidth > 768)? 'block': 'hidden'} w-120 bg-lightRed rounded`}>
+                <div className={`h-10 hidden lg:block w-96 xl:w-120 bg-lightRed rounded`}>
                     <input
                         type="search"
                         title="search"
@@ -69,7 +51,7 @@ const Navbar = () => {
 
                 {/* cart and search-button */}
                 <div className="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width={(screenWidth > 768)? "26":"20"} height={(screenWidth > 768)? "26":"20"} viewBox="0 0 26 26" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 md:w-6.5 h-5 md:h-6.5" viewBox="0 0 26 26" fill="none">
                         <path
                             d="M9.61593 19.2319C6.9284 19.2319 4.65411 18.3008 2.79306 16.4388C0.976806 14.5768 0.000987032 12.3025 7.82738e-07 
                             9.61593C-0.000985467 6.92939 0.930034 4.6551 2.79306 2.79306C4.65608 0.931019 6.93038 0 9.61593 0C12.3015 0 14.5763 0.931019 
@@ -82,7 +64,7 @@ const Navbar = () => {
                     </svg>
 
                     <div className="flex items-center justify-center w-8 h-8 md:w-11 md:h-11 border-2 border-solid border-customYellow rounded-3xl bg-customRed">
-                        <svg xmlns="http://www.w3.org/2000/svg" width={(screenWidth > 768)? "20":"16"} height={(screenWidth > 768)? "20":"16"} viewBox="0 0 20 20" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-4 md:w-5 h-4 md:h-5" viewBox="0 0 20 20" fill="none">
                             <path
                                 d="M19.4494 0.0314848C19.3525 0.00285292 19.2508 -0.00637972 19.1503 0.00431508C19.0497 0.0150099 18.9523 0.0454223 
                                 18.8635 0.0938125C18.7747 0.142203 18.6964 0.207621 18.6329 0.286326C18.5694 0.365031 18.5221 0.455477 18.4936 0.552492L17.9296 

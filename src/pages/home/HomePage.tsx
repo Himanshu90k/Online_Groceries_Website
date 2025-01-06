@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 
 const HomePage = () => {
     return (
-        <div className="relative w-78 min-[350px]:w-300 h-auto mx-auto bg-white flex flex-col items-center justify-start">
+        <div className="relative min-w-78 max-w-300 h-fit mx-2 md:mx-4 lg:mx-9 xl:mx-auto bg-white flex flex-col items-center justify-start">
             <Navbar />
             {/* <Products /> */}
             {/* <LocationPopup /> */}

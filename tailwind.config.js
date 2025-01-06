@@ -24,7 +24,11 @@ export default {
         '4.5xl': '2.5rem',
       },
       width: {
+        '6px': '6px',
+        '7px': '7px',
         2.5: '0.625rem',
+        3.5: '14px',
+        6.5: '26px',
         15: '3.75rem',
         78: '18.75rem',
         120: '37.5rem',
@@ -38,9 +42,18 @@ export default {
       },
       minWidth: {
         71: '17.375rem',
+        78: '18.75rem',
+      },
+      maxWidth: {
+        300: '85rem',
       },
       height: {
+        '5px': '5px',
+        '6px': '6px',
+        6.5: '26px',
         7: '1.875rem',
+        4.5: '18px',
+        9.5: '38px',
         15: '3.75rem',
         19: '4.375rem',
         78: '18.75rem',
@@ -52,6 +65,10 @@ export default {
       borderWidth: {
         3: '3px',
         16: '16px',
+      },
+      strokeWidth: {
+        3: '3px',
+        4: '4px',
       },
       borderRadius: {
         '4-xl': '2rem',
