@@ -31,6 +31,7 @@ export default {
         6.5: '26px',
         15: '3.75rem',
         78: '18.75rem',
+        116: '32.25rem',
         120: '37.5rem',
         140: '45rem',
         190: '51.25rem',
@@ -46,6 +47,7 @@ export default {
       },
       maxWidth: {
         300: '85rem',
+        270: '74.375rem',
       },
       height: {
         '5px': '5px',
@@ -64,11 +66,13 @@ export default {
       },
       borderWidth: {
         3: '3px',
+        6: '6px',
         16: '16px',
       },
       strokeWidth: {
         3: '3px',
         4: '4px',
+        8: '8px',
       },
       borderRadius: {
         '4-xl': '2rem',
