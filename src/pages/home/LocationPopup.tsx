@@ -5,9 +5,9 @@ const LocationPopup = () => {
             <div className="z-10 relative w-full h-full bg-black opacity-35"></div>
 
             {/* popup */}
-            <div className="z-20 fixed bottom-0 w-278 h-140 items-center justify-center flex border rounded-t-5-xl bg-white">
-                <div className="w-190 flex flex-col items-center gap-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="121" viewBox="0 0 120 121" fill="none">
+            <div className="z-20 fixed bottom-0 w-full lg:w-140 xl:w-278 py-6 h-fit xl:h-140 items-center justify-center flex border rounded-t-5-xl bg-white">
+                <div className="w-fit flex flex-col items-center gap-1 md:gap-2 xl:gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 md:w-10 xl:w-29 h-6 md:h-10 xl:h-29" viewBox="0 0 120 121" fill="none">
                         <path
                             d="M111.943 120.5L84.8057 93.4577C81.7903 96.6502 78.5866 99.8897 75.1944 103.176C71.8021 106.462 68.0801 109.796 64.0283 113.176C48.8575 
                             100.312 37.5274 88.3648 30.0382 77.3338C22.5489 66.3028 18.8024 56.0906 18.7986 46.6972C18.7986 43.6925 19.0342 40.8286 19.5053 38.1056C19.9764 35.3826 20.636 32.8005 
@@ -19,18 +19,18 @@ const LocationPopup = () => {
                     </svg>
 
                     {/* location block message */}
-                    <div className="flex flex-col items-center gap-2">
-                        <h2 className="text-black font-inter font-extrabold text-6xl">Location Permission is off</h2>
-                        <p className="text-center font-inter text-xl font-semibold">We need your location to find the nearest store & provide you a<br />seamless delivery experience.</p>
+                    <div className="flex flex-col items-center gap-1 xl:gap-2">
+                        <h2 className="text-black font-inter font-extrabold text-base md:text-2xl xl:text-6xl">Location Permission is off</h2>
+                        <p className="text-center font-inter text-xxs md:text-base xl:text-xl font-normal xl:font-semibold">We need your location to find the nearest store to provide you a<br />seamless delivery experience.</p>
                     </div>
 
                     {/* buttons */}
-                    <div className="flex flex-col gap-4 w-full">
-                        <button type="button" title="enable location" className="h-20 bg-customRed rounded-2xl w-full text-white font-inter text-3.5xl font-extrabold">
+                    <div className="flex flex-col px-6 gap-1 xl:gap-4 w-full">
+                        <button type="button" title="enable location" className="h-fit p-2 xl:p-0 xl:h-20 bg-customRed rounded-2xl w-full text-white font-inter text-xs md:text-xl font-bold xl:text-3.5xl xl:font-extrabold">
                             Enable Location
                         </button>
 
-                        <button type="button" title="search your location manually" className="h-20 border-4 border-solid border-customRed rounded-2xl w-full text-black font-inter text-3.5xl font-extrabold">
+                        <button type="button" title="search your location manually" className="h-fit p-2 xl:p-0 xl:h-20 border-2 xl:border-4 border-solid border-customRed rounded-2xl w-full text-black font-inter text-xs md:text-xl font-bold xl:text-3.5xl xl:font-extrabold">
                             Search Your Location Manually
                         </button>
                     </div>
