@@ -4,15 +4,15 @@ const AddLocationPopup = () => {
     return (
         <div className="absolute w-full h-full flex justify-center">
             {/* background */}
-            <div className="z-10 relative w-full h-full bg-black opacity-35"></div>
+            <div className="z-10 w-full h-full bg-black opacity-35"></div>
 
             {/* popup */}
-            <div className="z-20 fixed bottom-0 w-278 h-140 items-center justify-start flex border rounded-t-5-xl bg-white">
-                <div className="w-fit h-fit pl-16 flex flex-col items-start gap-16">
+            <div className="z-20 fixed bottom-0 w-full pl-6 xl:w-278 h-fit py-8 xl:h-140 items-center justify-start flex border rounded-t-5-xl bg-white">
+                <div className="w-full h-fit flex flex-col items-start gap-6 md:gap-10 xl:gap-16">
                     {/* address */}
-                    <div className="flex flex-col items-start gap-4">
-                        <div className="flex gap-6 items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="67" viewBox="0 0 47 67" fill="none">
+                    <div className="flex flex-col items-start gap-1 md:gap-2 xl:gap-4">
+                        <div className="flex gap-1 md:gap-3 xl:gap-6 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" className='w-21px h-31px md:w-8 md:h-8 xl:w-47px xl:h-67px' viewBox="0 0 47 67" fill="none">
                                 <path
                                     d="M23.3333 31.6667C21.1232 31.6667 19.0036 30.7887 17.4408 29.2259C15.878 27.6631 15 25.5435 15 23.3333C15 21.1232 15.878 19.0036 17.4408 17.4408C19.0036 
                                     15.878 21.1232 15 23.3333 15C25.5435 15 27.6631 15.878 29.2259 17.4408C30.7887 19.0036 31.6667 21.1232 31.6667 23.3333C31.6667 24.4277 31.4511 25.5113 31.0323 26.5224C30.6135 27.5334 
@@ -21,48 +21,48 @@ const AddLocationPopup = () => {
                                 />
                             </svg>
 
-                            <h2 className="font-inter font-bold text-4.5xl">Raj Infrabuilds</h2>
+                            <h2 className="font-inter font-bold text-sm md:text-2xl xl:text-4.5xl">Raj Infrabuilds</h2>
                         </div>
 
-                        <p className="font-inter text-xl font-medium">near Shitla Devi Mandir, Chembur Colony, Chembur,<br />Mumbai, Maharashtra India.</p>
+                        <p className="font-inter text-xxs md:text-sm xl:text-xl font-medium">near Shitla Devi Mandir, Chembur Colony, Chembur,<br />Mumbai, Maharashtra India.</p>
                     </div>
 
                     {/* set and save address */}
-                    <form className='flex flex-col items-start gap-9'>
-                        <div className='flex flex-col items-start'> {/* house/flat/block no */}
-                            <label htmlFor="houseNo" className="text-extraLightBlack font-inter text-xl font-medium">HOUSE / FLAT / BLOCK NO.</label>
+                    <form className='flex flex-col w-full xl:w-fit pr-6 md:pr-40 xl:pr-0 items-start gap-3 md:gap-5 xl:gap-9'>
+                        <div className='flex w-full flex-col items-start'> {/* house/flat/block no */}
+                            <label htmlFor="houseNo" className="text-extraLightBlack font-inter text-xxs md:text-sm xl:text-xl font-medium">HOUSE / FLAT / BLOCK NO.</label>
                             <input
                                 type="text"
                                 name="houseNo"
                                 title='houseNo'
-                                className="w-full h-8 font-inter text-xl pt-4 font-medium align-text-bottom"
+                                className="w-full h-fit xl:h-8 font-inter text-xs md:text-base xl:text-xl pt-1 xl:pt-4 font-medium align-text-bottom"
                             />
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1004" height="4" viewBox="0 0 1004 4" fill="none">
-                                <path d="M2 1.66663H1002" stroke="black" strokeOpacity="0.6" strokeWidth="3" strokeLinecap="round" />
+                            <svg xmlns="http://www.w3.org/2000/svg" className='w-full xl:h-1 stroke-3' viewBox="0 0 1004 4" fill="none">
+                                <path d="M2 1.66663H1002" stroke="black" strokeOpacity="0.6" strokeLinecap="round" />
                             </svg>
                         </div>
 
-                        <div> {/* Apartment/Road Area */}
-                            <label htmlFor="roadArea" className="text-extraLightBlack font-inter text-xl font-medium">APARTMENT / ROAD AREA</label>
+                        <div className='flex w-full flex-col items-start'> {/* Apartment/Road Area */}
+                            <label htmlFor="roadArea" className="text-extraLightBlack font-inter text-xxs md:text-sm xl:text-xl font-medium">APARTMENT / ROAD AREA</label>
                             <input
                                 type="roadArea"
                                 name="roadArea"
                                 title='roadArea'
-                                className="w-full h-8 font-inter text-xl pt-4 font-medium align-text-bottom"
+                                className="w-full h-fit xl:h-8 font-inter text-xs md:text-base xl:text-xl pt-1 xl:pt-4 font-medium align-text-bottom"
                             />
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1004" height="4" viewBox="0 0 1004 4" fill="none">
-                                <path d="M2 1.66663H1002" stroke="black" strokeOpacity="0.6" strokeWidth="3" strokeLinecap="round" />
+                            <svg xmlns="http://www.w3.org/2000/svg" className='w-full xl:h-1 stroke-3' viewBox="0 0 1004 4" fill="none">
+                                <path d="M2 1.66663H1002" stroke="black" strokeOpacity="0.6" strokeLinecap="round" />
                             </svg>
                         </div>
 
-                        <div className='flex flex-col items-start gap-4'> {/* save options */}
-                            <p className="text-extraLightBlack font-inter text-xl font-medium">SAVE AS</p>
-                            <div className='flex gap-3'>
+                        <div className='flex flex-col items-start gap-2 xl:gap-4'> {/* save options */}
+                            <p className="text-extraLightBlack font-inter text-xxs md:text-sm xl:text-xl font-semibold">SAVE AS</p>
+                            <div className='flex gap-1 xl:gap-3'>
                                 {/* house option */}
-                                <button type='submit' title='save-as-home' className='w-15 h-7 border-2 border-solid border-lightBlack rounded-4-xl flex justify-center items-center'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+                                <button type='submit' title='save-as-home' className='w-10 md:w-11 lg:w-15 h-5 md:h-6 lg:h-7 border md:border-2 border-solid border-lightBlack rounded-4-xl flex justify-center items-center'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" className='w-3 md:w-4 xl:w-5 h-3 md:h-4 xl:h-5' viewBox="0 0 18 19" fill="none">
                                         <path
                                             d="M17.4387 10.6666C17.3645 10.6671 17.291 10.6522 17.2223 10.6229C17.1537 10.5936 17.0912 10.5505 17.0385 10.4959L8.98439 2.07962L0.930233 10.4959C0.822412 
                                             10.5924 0.683718 10.6427 0.541868 10.637C0.400018 10.6313 0.265459 10.5699 0.165081 10.4651C0.0647034 10.3603 0.00589939 10.2197 0.000420339 10.0716C-0.00505871 9.9235 
@@ -77,8 +77,8 @@ const AddLocationPopup = () => {
                                 </button>
 
                                 {/* office option */}
-                                <button type='submit' title='save-as-office' className='w-15 h-7 border-2 border-solid border-lightBlack rounded-4-xl flex justify-center items-center'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+                                <button type='submit' title='save-as-office' className='w-10 md:w-11 lg:w-15 h-5 md:h-6 lg:h-7 border md:border-2 border-solid border-lightBlack rounded-4-xl flex justify-center items-center'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" className='w-3 md:w-4 xl:w-5 h-3 md:h-4 xl:h-5' viewBox="0 0 18 19" fill="none">
                                         <path
                                             fillRule="evenodd"
                                             clipRule="evenodd"
@@ -90,8 +90,8 @@ const AddLocationPopup = () => {
                                 </button>
 
                                 {/* friends option */}
-                                <button type='submit' title='save-as-friends' className='w-15 h-7 border-2 border-solid border-lightBlack rounded-4-xl flex justify-center items-center'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+                                <button type='submit' title='save-as-friends' className='w-10 md:w-11 lg:w-15 h-5 md:h-6 lg:h-7 border md:border-2 border-solid border-lightBlack rounded-4-xl flex justify-center items-center'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" className='w-3 md:w-4 xl:w-5 h-3 md:h-4 xl:h-5' viewBox="0 0 18 19" fill="none">
                                         <path d="M12.6562 9.66663C11.2583 9.66663 10.125 8.53335 10.125 7.13538C10.125 5.73741 11.2583 4.60413 12.6562 4.60413C14.0542 4.60413 15.1875 5.73741 15.1875 7.13538C15.1875 8.53335 14.0542 9.66663 12.6562 9.66663Z" fill="#1E1E1E" />
                                         <path d="M9.77344 11.0729C10.7634 10.5701 11.8561 10.3698 12.6562 10.3698C14.2235 10.3698 17.4375 11.3309 17.4375 13.2526V14.7291H12.1641V14.1642C12.1641 13.4962 11.8828 12.8265 11.3906 12.2682C10.9979 11.8224 10.4481 11.4086 9.77344 11.0729Z" fill="#1E1E1E" />
                                         <path d="M6.04688 10.7916C7.87746 10.7916 11.5312 11.9223 11.5312 14.1666V15.8541H0.5625V14.1666C0.5625 11.9223 4.21629 10.7916 6.04688 10.7916Z" fill="#1E1E1E" />
@@ -100,8 +100,8 @@ const AddLocationPopup = () => {
                                 </button>
 
                                 {/* location option */}
-                                <button type='submit' title='save-as-location' className='w-15 h-7 border-2 border-solid border-lightBlack rounded-4-xl flex justify-center items-center'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+                                <button type='submit' title='save-as-location' className='w-10 md:w-11 lg:w-15 h-5 md:h-6 lg:h-7 border md:border-2 border-solid border-lightBlack rounded-4-xl flex justify-center items-center'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" className='w-3 md:w-4 xl:w-5 h-3 md:h-4 xl:h-5' viewBox="0 0 18 19" fill="none">
                                         <path 
                                             d="M9 9.29163C8.50272 9.29163 8.02581 9.09408 7.67417 8.74245C7.32254 8.39082 7.125 7.91391 7.125 7.41663C7.125 6.91934 7.32254 6.44243 7.67417 6.0908C8.02581 5.73917 8.50272 
                                             5.54163 9 5.54163C9.49728 5.54163 9.97419 5.73917 10.3258 6.0908C10.6775 6.44243 10.875 6.91934 10.875 7.41663C10.875 7.66285 10.8265 7.90667 10.7323 8.13416C10.638 8.36164 10.4999 8.56834 

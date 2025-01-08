@@ -8,9 +8,9 @@
 
 input:focus {
     outline: none;
+    background: none;
 }
 
 input {
     outline: none;
-    background-color: none;
 }
