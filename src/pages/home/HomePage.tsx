@@ -1,7 +1,8 @@
 import Navbar from "./Navbar";
 import Products from "./Products";
 // import LocationPopup from "./LocationPopup";
-import AddLocationPopup from "./AddLocationPopup";
+// import AddLocationPopup from "./AddLocationPopup";
+import Footer from "../../components/footer";
 
 const HomePage = () => {
     return (
@@ -9,7 +10,8 @@ const HomePage = () => {
             <Navbar />
             <Products />
             {/* <LocationPopup /> */}
-            <AddLocationPopup />
+            {/* <AddLocationPopup /> */}
+            <Footer />
         </div>
     );
 };

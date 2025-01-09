@@ -2,27 +2,27 @@ import map from '../../assets/map.png';
 
 const MapPage = () => {
     return (
-        <div className="w-300 h-auto mx-auto bg-white flex flex-col items-center justify-start">
+        <div className="min-w-78 max-w-300 h-screen md:h-fit 2xl:h-fit mx-2 md:mx-4 lg:mx-9 xl:mx-auto bg-white flex flex-col items-center justify-start">
 
             {/* heading */}
-            <div className="w-300 h-20 bg-white shadow-locationBarShadow flex justify-center items-center">
-                <h1 className="text-black font-inter text-3xl font-semibold">Location Information</h1>
+            <div className="w-full h-10 lg:h-20 bg-customRed shadow-locationBarShadow flex justify-center items-center">
+                <h1 className="text-white font-inter text-sm lg:text-3xl font-extrabold">Location Information</h1>
             </div>
 
             {/* map */}
-            <div className="relative w-300 h-190">
-                <img src={map} alt='map' />
+            <div className="relative w-full h-screen xl:h-190">
+                <img className='w-full h-full object-cover' src={map} alt='map' />
 
-                <div className='absolute z-10 left-1/3 top-1/3 flex flex-col items-center gap-2'>
+                <div className='absolute z-10 inset-0 top-1/3 flex flex-col items-center gap-2'>
 
                     {/* dialog box */}
-                    <svg xmlns="http://www.w3.org/2000/svg" width="392" height="86" viewBox="0 0 392 86" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" className='w-70 lg:w-98 h-16 lg:h-21' viewBox="0 0 392 86" fill="none">
                         <g filter="url(#filter0_d_7_11)">
                             <path d="M4 16C4 7.16344 11.1634 0 20 0H372C380.837 0 388 7.16344 388 16V44C388 52.8366 380.837 60 372 60H20C11.1635 60 4 52.8366 4 44V16Z" fill="#D31F28" />
                             <path d="M214 60L196 78L178 60H214Z" fill="#D31F28" />
                         </g>
                         <defs>
-                            <filter id="filter0_d_7_11" x="0" y="0" width="392" height="86" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                            <filter id="filter0_d_7_11" x="0" y="0" className='w-70 lg:w-98 h-16 lg:h-21' filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                                 <feFlood floodOpacity="0" result="BackgroundImageFix" />
                                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                                 <feOffset dy="4" />
@@ -35,10 +35,10 @@ const MapPage = () => {
                         </defs>
                     </svg>
 
-                    <p className='z-20 absolute text-white font-inter text-base font-bold top-1'>Your order will be delivered here<br /> Move pin to your exact location</p>
+                    <p className='z-20 absolute text-white font-inter text-xs lg:text-base font-bold top-1'>Your order will be delivered here<br /> Move pin to your exact location</p>
 
                     {/* location marker */}
-                    <svg xmlns="http://www.w3.org/2000/svg" width="47" height="67" viewBox="0 0 47 67" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" className='w-27px lg:w-47px h-41px lg:h-67px' width="47" height="67" viewBox="0 0 47 67" fill="none">
                         <path
                             d="M16.7337 29.933C18.484 31.6833 20.858 32.6667 23.3333 32.6667C24.559 32.6667 25.7727 32.4253 26.905 31.9562C28.0374 
                             31.4872 29.0663 30.7997 29.933 29.933C30.7997 29.0663 31.4872 28.0374 31.9562 26.905C32.4253 25.7727 32.6667 24.559 32.6667 23.3333C32.6667 
@@ -52,11 +52,11 @@ const MapPage = () => {
                 </div>
 
                 {/* address and location button */}
-                <div className='absolute z-10 -bottom-32 w-300 flex flex-col items-center gap-6'>
+                <div className='absolute w-full z-10 bottom-0 h-fit lg:-bottom-32 flex flex-col items-center gap-6'>
 
                     {/* location button */}
-                    <div className='w-52 h-9 gap-3 flex items-center justify-center rounded-2xl bg-white shadow-locationBoxShadow'>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                    <div className='w-29 lg:w-52 h-5 lg:h-9 gap-1 lg:gap-3 flex items-center justify-center rounded-2xl bg-white shadow-locationBoxShadow'>
+                        <svg xmlns="http://www.w3.org/2000/svg" className='w-15px h-14px lg:w-29px lg:h-28px' width="29" height="28" viewBox="0 0 29 28" fill="none">
                             <path
                                 d="M27.4073 12.9756H25.5088C25.2606 10.3936 24.1218 7.97829 22.2876 6.14409C20.4534 4.30989 18.0382 3.17106 15.4561 2.92293V1.02439C15.4561 0.752705 
                                 15.3482 0.492147 15.1561 0.300037C14.964 0.107927 14.7034 0 14.4317 0C14.16 0 13.8995 0.107927 13.7074 0.300037C13.5152 0.492147 13.4073 0.752705 13.4073 1.02439V2.92293C10.8366 
@@ -75,18 +75,18 @@ const MapPage = () => {
                                 11.6415C20.4621 12.3938 20.6209 13.1998 20.6191 14.0135Z" fill="#D31F28"
                             />
                         </svg>
-                        <h3 className='text-black font-inter text-xl font-semibold'>Locate Me</h3>
+                        <h3 className='text-black font-inter text-xs lg:text-xl font-semibold'>Locate Me</h3>
                     </div>
 
                     {/* address */}
-                    <div className='w-full h-60 px-20 rounded-t-8-xl bg-white flex items-center justify-between'>
+                    <div className='w-full h-32 lg:h-60 px-3 min-[475px]:px-6 md:px-10 lg:px-20 rounded-t-4-xl lg:rounded-t-8-xl bg-white flex items-center justify-between'>
 
                         {/* location */}
-                        <div className='flex flex-col items-start gap-8'>
-                            <p className='text-lightBlack font-inter text-2xl font-medium'>Select Your Delivery Location</p>
+                        <div className='flex flex-col items-start gap-3 lg:gap-8'>
+                            <p className='text-lightBlack font-inter text-xs lg:text-2xl font-medium'>Select Your Delivery Location</p>
                             <div className='flex flex-col justify-start'>
-                                <div className='flex items-center gap-6'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="47" height="67" viewBox="0 0 47 67" fill="none">
+                                <div className='flex items-center gap-1 lg:gap-6'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" className='w-17px lg:w-47px h-6.5 lg:h-67px' viewBox="0 0 47 67" fill="none">
                                         <path 
                                             d="M23.3333 31.6667C21.1232 31.6667 19.0036 30.7887 17.4408 29.2259C15.878 27.6631 15 25.5435 15 23.3333C15 21.1232 15.878 
                                             19.0036 17.4408 17.4408C19.0036 15.878 21.1232 15 23.3333 15C25.5435 15 27.6631 15.878 29.2259 17.4408C30.7887 19.0036 31.6667 21.1232 31.6667 
@@ -95,19 +95,19 @@ const MapPage = () => {
                                             66.6667 46.6667 40.8333 46.6667 23.3333C46.6667 17.1449 44.2083 11.21 39.8325 6.83417C35.4566 2.45833 29.5217 0 23.3333 0Z" fill="#D31F28" 
                                         />
                                     </svg>
-                                    <h2 className='text-black font-inter text-4.5xl font-bold'>Raj Infrabuilds</h2>
+                                    <h2 className='text-black font-inter text-xl lg:text-4.5xl font-bold'>Raj Infrabuilds</h2>
                                 </div>
 
-                                <p className='text-black font-inter text-xl font-normal'>near Shitla Devi Mandir, Chembur Colony, Chembur,</p>
+                                <p className='text-black font-inter text-xxs lg:text-xl font-normal'>near Shitla Devi Mandir, Chembur Colony, Chembur,</p>
                             </div>
                         </div>
 
                         {/* buttons */}
-                        <div className='flex flex-col items-center gap-4'>
-                            <button className='text-black font-inter text-3.5xl font-bold rounded-4-xl h-15 border-4 border-solid border-customRed w-60'>
+                        <div className='flex flex-col items-center gap-2 lg:gap-4'>
+                            <button className='text-black font-inter text-xs md:text-base lg:text-3.5xl font-semibold lg:font-bold rounded-4-xl w-16 md:w-29 lg:w-60 h-6 md:h-10 lg:h-15 border-2 lg:border-4 border-solid border-customRed'>
                                 Select
                             </button>
-                            <button className='text-white font-inter text-3.5xl font-bold rounded-4-xl h-15 bg-customRed w-60'>
+                            <button className='text-white font-inter text-xs md:text-base lg:text-3.5xl font-semibold lg:font-bold rounded-4-xl w-16 md:w-29 lg:w-60 h-6 md:h-10 lg:h-15 bg-customRed'>
                                 Change
                             </button>
                         </div>
