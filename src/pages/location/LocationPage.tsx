@@ -10,8 +10,8 @@ const LocationPage = () => {
             <div className="w-full px-5 sm:px-10 md:px-16 h-fit">
                 {/* search bar */}
                 <div className="w-full h-7 lg:h-19 rounded-4-xl border-2 lg:border-3 border-solid border-extraLightBlack shadow-searchBoxShadow my-4 lg:mb-9 lg:mt-24 flex items-center justify-start">
-                    <div className="flex gap-1 lg:gap-5 items-center pl-3 lg:pl-7">
-                        <button type="button" title="search">
+                    <form className="flex w-full rounded-4-xl gap-1 lg:gap-5 items-center pl-3 lg:pl-7">
+                        <button type="submit" title="search">
                             <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 lg:w-34px h-14px lg:h-34px" viewBox="0 0 34 34" fill="none">
                                 <path
                                     d="M12.5747 25.1494C9.06022 25.1494 6.08615 23.9319 3.65246 21.4969C1.21878 19.0619 0.00129073 16.0879 1.02358e-06 12.5747C-0.00128869 9.06151 1.2162 
@@ -23,8 +23,11 @@ const LocationPage = () => {
                                 />
                             </svg>
                         </button>
-                        <p className="text-extraLightBlack font-inter text-xs lg:text-2xl font-medium lg:font-semibold">Search your area/pincode/apartment</p>
-                    </div>
+                        <input 
+                            className="text-extraLightBlack rounded-4-xl pl-1 md:pl-2 w-full font-inter text-xs lg:text-2xl font-medium lg:font-semibold" 
+                            placeholder="Search your area/pincode/apartment"
+                        />
+                    </form>
                 </div>
 
                 {/* location buttons */}
