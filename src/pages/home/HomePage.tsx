@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import Products from "./Products";
 // import LocationPopup from "./LocationPopup";
 // import AddLocationPopup from "./AddLocationPopup";
-import Footer from "../../components/footer";
+import Footer from "../../components/Footer";
 
 const HomePage = () => {
     return (

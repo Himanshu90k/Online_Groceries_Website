@@ -6,7 +6,7 @@ import '../../index.css';
 
 const Products = () => {
     return (
-        <div className='my-9 w-full flex flex-col items-center gap-4'>
+        <div className='my-9 w-full flex md:mb-40 flex-col items-center gap-4'>
 
             {/* groceries */}
             <div className="bg-customRed w-full h-36 md:h-100 flex items-center gap-4 md:gap-8 overflow-x-scroll px-4">
